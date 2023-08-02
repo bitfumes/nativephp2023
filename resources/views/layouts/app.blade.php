@@ -7,10 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ $title ?? 'Page Title' }}</title>
     @vite('resources/js/app.js')
+    @livewireStyles
 </head>
 
 <body>
-    {{ $slot }}
+    <div class="flex justify-center h-screen">
+        <div class="m-auto">
+            {{ $slot }}
+        </div>
+    </div>
+    @livewireScripts
 </body>
 
 </html>

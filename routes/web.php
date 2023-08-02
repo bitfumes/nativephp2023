@@ -1,7 +1,7 @@
 <?php
 
-use App\Livewire\AddReminder;
-use App\Livewire\Reminders;
+use App\Http\Livewire\AddReminder;
+use App\Http\Livewire\Reminders;
 use Illuminate\Support\Facades\Route;
 
 /*
