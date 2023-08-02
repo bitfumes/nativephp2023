@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\AddReminder;
+use App\Livewire\Reminders;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return "Hello world!";
+})->name('home');
+
+Route::get('/reminders', Reminders::class)->name('reminders');
+
+Route::get('add-reminder', AddReminder::class)->name('add-reminder');
